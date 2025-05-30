@@ -386,3 +386,90 @@ h2 {
 header {
   text-align: center; /* центрируем содержимое по горизонтали */
 }
+
+
+
+
+
+.skill-group {
+  margin-bottom: 2.5rem;
+}
+
+.skill-group-name {
+  font-size: 1.3rem; /* чуть больше, чем было 0.9rem */
+  font-weight: 600;
+  color: #bbdefb;
+  margin-bottom: 0rem;
+  user-select: none;
+  white-space: nowrap;
+  /* border-bottom: убрана */
+  padding-bottom: 0; /* убираем паддинг снизу */
+}
+
+/* Раскладка плашек в ряд */
+.skill-group > .skill {
+  display: inline-block;
+  width: 22.7%; /* 4 в ряд */
+  margin-right: 1rem;
+  vertical-align: top;
+  box-sizing: border-box;
+  margin-top: 1rem;    /* отступ сверху */
+  margin-bottom: 1rem; /* отступ снизу */
+}
+
+.skill-group > .skill:last-child {
+  margin-right: 0;
+}
+
+
+
+
+
+/* Адаптив */
+
+/* Планшеты и меньше */
+@media (max-width: 900px) {
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .name-box {
+    padding: 0.8rem 1.5rem;
+  }
+
+  .skill-group > .skill {
+    display: inline-block;
+    width: 32%;
+    margin-right: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Мобильные */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .name-box {
+    padding: 0.6rem 1rem;
+    width: 70vw; /* чтобы не выходил за экран */
+    box-sizing: border-box;
+  }
+
+  .name {
+    font-size: 1.8rem;
+  }
+
+  .skill-group > .skill {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
