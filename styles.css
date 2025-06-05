@@ -191,7 +191,7 @@ h2 {
   cursor: default;
 }
 
-.project:focus-within,
+
 .project:hover {
   background: rgba(79 195 247 / 0.15);
   box-shadow:
