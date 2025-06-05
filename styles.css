@@ -223,7 +223,18 @@ h2 {
   font-size: 1rem;
   margin-bottom: 1.2rem;
   line-height: 1.5;
+  white-space: normal;
 }
+
+.project-description strong {
+  display: block;           /* каждое название с новой строки */
+  font-weight: 700;         /* выделение жирным */
+  color: #81d4fa;           /* цвет для выделения (можно менять) */
+  margin-top: 0.5rem;       /* небольшой отступ сверху */
+  margin-bottom: 0.2rem;    /* небольшой отступ снизу */
+  user-select: none;
+}
+
 
 .project-links {
   display: flex;
