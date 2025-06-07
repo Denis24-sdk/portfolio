@@ -72,7 +72,7 @@ h1 {
 
 /* Заголовки разделов */
 h2 {
-  font-size: 2rem;
+  font-size: 2.3rem;
   margin-bottom: 1.25rem;
   color: #81d4fa;
   border-bottom: 2px solid #4fc3f7;
@@ -485,6 +485,26 @@ header {
 
   .projects {
     margin: 2rem -2rem 4rem;
+  }
+
+  #contacts-title {
+    text-align: center;
+  }
+  
+  #contacts {
+    margin: 0 -2rem;
+  }
+
+  #projects-title {
+    margin-left: -2rem;
+    margin-right: -2rem;
+    text-align: center;
+  }
+
+  #skills-title {
+    margin-left: -2rem;
+    margin-right: -2rem;
+    text-align: center;
   }
 }
 
