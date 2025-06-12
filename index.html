@@ -5,248 +5,557 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Портфолио</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles\index.css">
 </head>
 
 <body>
     <main class="container" role="main">
-
-        <header>
-            <h1>Портфолио</h1>
+        <!-- Хедер -->
+        <header class="header" role="banner">
+            <h1 class="title">Портфолио</h1>
             <div class="name-box">
                 <h2 class="name">Магуров Денис</h2>
                 <p class="sub-title">Frontend-разработчик</p>
             </div>
         </header>
 
-
+        <!-- Навыки -->
         <section id="skills" aria-labelledby="skills-title">
-            <h2 id="skills-title">Навыки</h2>
-
-            <div class="skill-group" aria-label="Языки программирования">
-                <p class="skill-group-name">Языки программирования</p>
-
-                <div class="skill" tabindex="0" role="group" aria-label="Навык HTML, уровень 100 процентов">
-                    <div class="skill-label">HTML</div>
-                    <div class="skill-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100"
-                        aria-label="Уровень навыка HTML: 100 процентов">
-                        <div class="skill-bar-fill" style="--width: 100%;"></div>
+            <h2 id="skills-title" class="section-header">Навыки</h2>
+            <div class="skills-wrapper">
+                <div class="skill-group" tabindex="0" aria-label="Языки программирования">
+                    <h3>Языки программирования</h3>
+                    <div class="skill">
+                        <div class="skill-label">HTML</div>
+                        <div class="skill-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                            aria-valuemax="100" aria-label="HTML 100 процентов">
+                            <div class="skill-fill" style="--fill-width:100%; width: 0;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-label">CSS</div>
+                        <div class="skill-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                            aria-valuemax="100" aria-label="CSS 100 процентов">
+                            <div class="skill-fill" style="--fill-width:100%; width: 0;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-label">JavaScript</div>
+                        <div class="skill-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                            aria-valuemax="100" aria-label="JavaScript 85 процентов">
+                            <div class="skill-fill" style="--fill-width:85%; width: 0;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-label">Python</div>
+                        <div class="skill-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                            aria-valuemax="100" aria-label="Python 85 процентов">
+                            <div class="skill-fill" style="--fill-width:85%; width: 0;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-label">C#</div>
+                        <div class="skill-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0"
+                            aria-valuemax="100" aria-label="C# 65 процентов">
+                            <div class="skill-fill" style="--fill-width:65%; width: 0;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-label">PHP</div>
+                        <div class="skill-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                            aria-valuemax="100" aria-label="PHP 70 процентов">
+                            <div class="skill-fill" style="--fill-width:70%; width: 0;"></div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="skill" tabindex="0" role="group" aria-label="Навык CSS, уровень 100 процентов">
-                    <div class="skill-label">CSS</div>
-                    <div class="skill-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100"
-                        aria-label="Уровень навыка CSS: 100 процентов">
-                        <div class="skill-bar-fill" style="--width: 100%;"></div>
+                <div class="skill-group" tabindex="0" aria-label="Базы данных">
+                    <h3>Базы данных</h3>
+                    <div class="skill">
+                        <div class="skill-label">SQL</div>
+                        <div class="skill-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                            aria-valuemax="100" aria-label="SQL 75 процентов">
+                            <div class="skill-fill" style="--fill-width:75%; width: 0;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-label">MySQL</div>
+                        <div class="skill-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                            aria-valuemax="100" aria-label="MySQL 75 процентов">
+                            <div class="skill-fill" style="--fill-width:75%; width: 0;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-label">SQLite</div>
+                        <div class="skill-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0"
+                            aria-valuemax="100" aria-label="SQLite 65 процентов">
+                            <div class="skill-fill" style="--fill-width:65%; width: 0;"></div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="skill" tabindex="0" role="group" aria-label="Навык JavaScript, уровень 85 процентов">
-                    <div class="skill-label">JavaScript</div>
-                    <div class="skill-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85"
-                        aria-label="Уровень навыка JavaScript: 85 процентов">
-                        <div class="skill-bar-fill" style="--width: 85%;"></div>
+                <div class="skill-group" tabindex="0" aria-label="Фреймворки и остальное">
+                    <h3>Фреймворки и остальное</h3>
+                    <div class="skill">
+                        <div class="skill-label">Git</div>
+                        <div class="skill-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                            aria-valuemax="100" aria-label="Git 75 процентов">
+                            <div class="skill-fill" style="--fill-width:75%; width: 0;"></div>
+                        </div>
                     </div>
-                </div>
-
-                <div class="skill" tabindex="0" role="group" aria-label="Навык Python, уровень 85 процентов">
-                    <div class="skill-label">Python</div>
-                    <div class="skill-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85"
-                        aria-label="Уровень навыка Python: 85 процентов">
-                        <div class="skill-bar-fill" style="--width: 85%;"></div>
+                    <div class="skill">
+                        <div class="skill-label">SEO</div>
+                        <div class="skill-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                            aria-valuemax="100" aria-label="SEO 85 процентов">
+                            <div class="skill-fill" style="--fill-width:85%; width: 0;"></div>
+                        </div>
                     </div>
-                </div>
-
-                <div class="skill" tabindex="0" role="group" aria-label="Навык C#, уровень 65 процентов">
-                    <div class="skill-label">C#</div>
-                    <div class="skill-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="65"
-                        aria-label="Уровень навыка C#: 65 процентов">
-                        <div class="skill-bar-fill" style="--width: 65%;"></div>
-                    </div>
-                </div>
-
-                <div class="skill" tabindex="0" role="group" aria-label="Навык PHP, уровень 70 процентов">
-                    <div class="skill-label">PHP</div>
-                    <div class="skill-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70"
-                        aria-label="Уровень навыка PHP: 70 процентов">
-                        <div class="skill-bar-fill" style="--width: 70%;"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skill-group" aria-label="Базы данных">
-                <p class="skill-group-name">Базы данных</p>
-
-                <div class="skill" tabindex="0" role="group" aria-label="Навык SQL, уровень 75 процентов">
-                    <div class="skill-label">SQL</div>
-                    <div class="skill-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75"
-                        aria-label="Уровень навыка SQL: 75 процентов">
-                        <div class="skill-bar-fill" style="--width: 75%;"></div>
-                    </div>
-                </div>
-
-                <div class="skill" tabindex="0" role="group" aria-label="Навык MySQL, уровень 75 процентов">
-                    <div class="skill-label">MySQL</div>
-                    <div class="skill-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75"
-                        aria-label="Уровень навыка MySQL: 75 процентов">
-                        <div class="skill-bar-fill" style="--width: 75%;"></div>
-                    </div>
-                </div>
-
-                <div class="skill" tabindex="0" role="group" aria-label="Навык SQLite, уровень 65 процентов">
-                    <div class="skill-label">SQLite</div>
-                    <div class="skill-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="65"
-                        aria-label="Уровень навыка SQLite: 65 процентов">
-                        <div class="skill-bar-fill" style="--width: 65%;"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skill-group" aria-label="Фреймворки и остальное">
-                <p class="skill-group-name">Фреймворки и остальное</p>
-
-                <div class="skill" tabindex="0" role="group" aria-label="Навык Git, уровень 75 процентов">
-                    <div class="skill-label">Git</div>
-                    <div class="skill-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75"
-                        aria-label="Уровень навыка Git: 75 процентов">
-                        <div class="skill-bar-fill" style="--width: 75%;"></div>
-                    </div>
-                </div>
-
-                <div class="skill" tabindex="0" role="group" aria-label="Навык SEO, уровень 85 процентов">
-                    <div class="skill-label">SEO</div>
-                    <div class="skill-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85"
-                        aria-label="Уровень навыка SEO: 85 процентов">
-                        <div class="skill-bar-fill" style="--width: 85%;"></div>
-                    </div>
-                </div>
-
-                <div class="skill" tabindex="0" role="group" aria-label="Навык React, уровень 50 процентов">
-                    <div class="skill-label">React</div>
-                    <div class="skill-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"
-                        aria-label="Уровень навыка React: 50 процентов">
-                        <div class="skill-bar-fill" style="--width: 50%;"></div>
+                    <div class="skill">
+                        <div class="skill-label">React</div>
+                        <div class="skill-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                            aria-valuemax="100" aria-label="React 50 процентов">
+                            <div class="skill-fill" style="--fill-width:50%; width: 0;"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-
-        <section aria-labelledby="projects-title">
-            <h2 id="projects-title">Проекты</h2>
-            <ul class="projects">
-
-                <li class="project" tabindex="0">
-                    <img src="img\Снимок экрана 2025-06-04 190102.png" alt="Превью проекта 3" />
-                    <h3>Форум</h3>
-                    <p class="project-description">
-                        <strong>Описание:</strong> Форум — это сайт для общения и обмена сообщениями, разработанное с
-                        использованием PHP, HTML, CSS, JavaScript и MySQL. Позволяет пользователям создавать темы,
-                        оставлять комментарии, редактировать и удалять сообщения, а также просматривать и сортировать
-                        контент. Имеется защищённая админ-панель, через которую администраторы могут управлять всеми
-                        вопросами и комментариями, обеспечивая модерацию и поддержание порядка на сайте.<br />
-                        <strong>Навыки:</strong> Разработка серверной логики на PHP, создание и оптимизация SQL-запросов
-                        в MySQL, верстка и стилизация интерфейса с помощью HTML и CSS, написание клиентского скрипта на
-                        JavaScript, работа с формами и обработка пользовательского ввода, основы безопасности
-                        веб-приложений.
-                        <strong>Трудности:</strong> Основные сложности возникли при организации взаимодействия между
-                        фронтендом и бэкендом, обеспечении безопасности данных и предотвращении SQL-инъекций, а также
-                        при проектировании реляционной базы данных и оптимизации запросов. Кроме того, потребовалось
-                        реализовать динамическое обновление интерфейса с помощью JavaScript.<br />
-                    </p>
-                    <div class="project-links">
-                        <a href="https://github.com/Denis24-sdk/blog-platform/tree/master" target="_blank"
-                            rel="noopener" class="github" aria-label="GitHub репозиторий Проекта 3">
-                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
-                                <path
-                                    d="M12 0C5.37 0 0 5.37 0 12a12 12 0 008.21 11.44c.6.11.82-.26.82-.58v-2.17c-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.34-1.77-1.34-1.77-1.1-.75.08-.74.08-.74 1.22.09 1.86 1.26 1.86 1.26 1.08 1.85 2.84 1.32 3.53 1 .11-.78.42-1.32.76-1.62-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.16 0 0 1-.32 3.3 1.23a11.5 11.5 0 016 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.64.24 2.86.12 3.16.77.84 1.24 1.91 1.24 3.22 0 4.61-2.8 5.62-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.82.58A12 12 0 0024 12c0-6.63-5.37-12-12-12z" />
-                            </svg>
-                            GitHub
-                        </a>
-                        <a href="http://blog-test-my-project-db.rf.gd/public/" target="_blank" rel="noopener"
-                            class="site" aria-label="Сайт Проекта 1">
-                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M3 12l18-12v24L3 12z" />
-                            </svg>
-                            Сайт
-                        </a>
-                    </div>
-                </li>
-
-                <li class="project" tabindex="0">
-                    <img src="img\Снимок экрана 2025-06-04 184220.png" alt="Превью проекта 2" />
-                    <h3>ToDo-List, написанный на React</h3>
-                    <p class="project-description">
-                        <strong>Описание:</strong> ToDo-List — это интерактивное веб-приложение для управления задачами,
-                        созданное с использованием React. Позволяет добавлять, редактировать, удалять и отмечать задачи
-                        как выполненные с сохранением состояния.<br />
-                        <strong>Навыки:</strong> React (хуки useState, useEffect), управление состоянием, работа с
-                        формами, обработка событий, стилизация компонентов, базовые принципы UX/UI, локальное хранение
-                        данных (localStorage).
-                        <strong>Трудности:</strong> Были сложности с управлением состоянием компонентов и синхронизацией
-                        данных между ними. Также потребовалось реализовать удобный и отзывчивый интерфейс с правильной
-                        обработкой событий и оптимизацией рендеринга.<br />
-                    </p>
-                    <div class="project-links">
-                        <a href="https://github.com/Denis24-sdk/ToDo-List/tree/master" target="_blank" rel="noopener"
-                            class="github" aria-label="GitHub репозиторий Проекта 2">
-                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
-                                <path
-                                    d="M12 0C5.37 0 0 5.37 0 12a12 12 0 008.21 11.44c.6.11.82-.26.82-.58v-2.17c-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.34-1.77-1.34-1.77-1.1-.75.08-.74.08-.74 1.22.09 1.86 1.26 1.86 1.26 1.08 1.85 2.84 1.32 3.53 1 .11-.78.42-1.32.76-1.62-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.16 0 0 1-.32 3.3 1.23a11.5 11.5 0 016 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.64.24 2.86.12 3.16.77.84 1.24 1.91 1.24 3.22 0 4.61-2.8 5.62-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.82.58A12 12 0 0024 12c0-6.63-5.37-12-12-12z" />
-                            </svg>
-                            GitHub
-                        </a>
-                        <a href="https://todo-list-test-all.netlify.app/" target="_blank" rel="noopener" class="site"
-                            aria-label="Сайт Проекта 1">
-                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M3 12l18-12v24L3 12z" />
-                            </svg>
-                            Сайт
-                        </a>
-                    </div>
-                </li>
-
-                <li class="project" tabindex="0">
-                    <img src="img\Снимок экрана 2025-05-29 170412.png" alt="Превью проекта 1" />
-                    <h3>Музей Уличного искусства и граффити</h3>
-                    <p class="project-description">
-                        <strong>Описание:</strong> Небольшой многостраничный, адаптивный сайт с современным и ярким
-                        дизайном,
-                        оснащённый удобным навигационным меню, созданный с использованием HTML и CSS.<br />
-                        <strong>Навыки:</strong> HTML, CSS, работа с Flexbox и Grid, Оптимизация.
-                        <strong>Трудности:</strong> Сложности возникли с адаптивностью навигационного меню и с выбором
-                        стиля<br />
-                    </p>
-                    <div class="project-links">
-                        <a href="https://github.com/Denis24-sdk/museum-street-graffity/tree/master" target="_blank"
-                            rel="noopener" class="github" aria-label="GitHub репозиторий Проекта 1">
-                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
-                                <path
-                                    d="M12 0C5.37 0 0 5.37 0 12a12 12 0 008.21 11.44c.6.11.82-.26.82-.58v-2.17c-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.34-1.77-1.34-1.77-1.1-.75.08-.74.08-.74 1.22.09 1.86 1.26 1.86 1.26 1.08 1.85 2.84 1.32 3.53 1 .11-.78.42-1.32.76-1.62-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.16 0 0 1-.32 3.3 1.23a11.5 11.5 0 016 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.64.24 2.86.12 3.16.77.84 1.24 1.91 1.24 3.22 0 4.61-2.8 5.62-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.82.58A12 12 0 0024 12c0-6.63-5.37-12-12-12z" />
-                            </svg>
-                            GitHub
-                        </a>
-                        <a href="https://museum-street-graffity.netlify.app/" target="_blank" rel="noopener"
-                            class="site" aria-label="Сайт Проекта 1">
-                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M3 12l18-12v24L3 12z" />
-                            </svg>
-                            Сайт
-                        </a>
-                    </div>
-                </li>
-
-            </ul>
+        <!-- Фильтры проектов и кнопка раскрытия описаний -->
+        <section id="project-filters" aria-label="Фильтр проектов и управление описаниями">
+            <div>
+                <button class="filter-btn active" data-filter="all" aria-pressed="true" type="button">Все
+                    проекты</button>
+                <button class="filter-btn" data-filter="landing" aria-pressed="false" type="button">Лендинги</button>
+                <button class="filter-btn" data-filter="forum" aria-pressed="false" type="button">Форумы</button>
+                <button class="filter-btn" data-filter="info" aria-pressed="false" type="button">Инфо-сайты</button>
+                <button class="filter-btn" data-filter="spa" aria-pressed="false" type="button">SPA</button>
+            </div>
+            <button id="toggle-descriptions" type="button" aria-expanded="false" aria-controls="projects"
+                aria-label="Переключить раскрытие описания проектов">
+                Раскрыть описание проектов
+            </button>
         </section>
 
+        <!-- Проекты -->
+        <section id="projects" aria-live="polite" aria-label="Список проектов">
+            <div class="projects-grid">
+                <!-- Проект 1 -->
+                <article class="project-card" data-category="forum" tabindex="0" role="group"
+                    aria-labelledby="project3-title" aria-describedby="project3-desc">
+                    <div class="project-img-wrapper">
+                        <img src="img\image_2025-06-12_15-40-03.jpg" alt="Превью проекта Форум" loading="lazy" />
+                    </div>
+                    <div class="project-info">
+                        <div class="content-wrapper">
+                            <h3 id="project3-title" class="project-title">Форум для геймеров</h3>
+                            <p id="project-develop">(Ещё дорабатывается, GitHub приватный)</p>
+                            <p id="project3-desc" class="project-description">
+                                <strong>Описание:</strong> Данный сайт объединяет две ключевые функции — активный форум
+                                и
+                                систему проведения турниров для геймеров.
+                                Форум предоставляет пользователям возможность задавать вопросы, отвечать на них и
+                                оставлять
+                                комментарии, создавая живое и дружелюбное сообщество.
+                                Турниры позволяют создавать собственные соревнования, а также регистрироваться и
+                                участвовать
+                                в уже существующих турнирах, что способствует развитию соревновательного духа и
+                                взаимодействию игроков.
+                                Для удобства и безопасности реализована полноценная система регистрации и авторизации
+                                пользователей.
+                            </p>
+                            <p class="project-description">
+                                <strong>Стек технологий: </strong>
+                                PHP, JavaScript, HTML/CSS, SQL, MySQL
+                            </p>
+                            <p class="project-description">
+                                <strong>Трудности при разработке: </strong>
+                                Оптимизация производительности форума;
+                                Обеспечение безопасности и надёжности системы
+                                авторизации;
+                                Проектирование гибкой системы турниров.
+                            </p>
+                        </div>
+                        <div class="project-links">
+                            <a href="" target="_blank" rel="noopener noreferrer" class="project-link-btn github"
+                                role="button" aria-label="Открыть репозиторий проекта на GitHub">
+                                GitHub
+                            </a>
+                            <a href="http://blog-test-my-project-db.rf.gd/" target="_blank" rel="noopener noreferrer"
+                                class="project-link-btn site" role="button" aria-label="Перейти на сайт проекта">
+                                Сайт
+                            </a>
+                        </div>
+                    </div>
+                </article>
 
+                <!-- Проект 2 -->
+                <article class="project-card" data-category="spa" tabindex="0" role="group"
+                    aria-labelledby="project2-title" aria-describedby="project2-desc">
+                    <div class="project-img-wrapper">
+                        <img src="img/Снимок экрана 2025-06-04 184220.png" alt="Превью проекта ToDo-List на React"
+                            loading="lazy" />
+                    </div>
+                    <div class="project-info">
+                        <div class="content-wrapper">
+                            <h3 id="project2-title" class="project-title">ToDo-List, написанный на React</h3>
+                            <p id="project2-desc" class="project-description">
+                                <strong>Описание:</strong> Интерактивное приложение на React, позволяющее создавать,
+                                редактировать и
+                                удалять задачи. Использует Hooks для управления состоянием, localStorage для сохранения
+                                данных между
+                                сессиями и обеспечивает удобный интерфейс для пользователей. Отличный пример
+                                SPA-приложения
+                                с современной
+                                архитектурой.
+                            </p>
+                            <p class="project-description">
+                                <strong>Стек технологий: </strong>
+                                React (Hooks, функциональные компоненты),
+                                JavaScript (ES6+),
+                                HTML5, CSS3,
+                                localStorage API
+                            </p>
+                            <p class="project-description">
+                                <strong>Трудности при разработке: </strong>
+                                Управление состоянием задач с учётом добавления, редактирования и удаления без потери
+                                производительности;
+                                Синхронизация состояния приложения с localStorage;
+                                Оптимизация рендеринга компонентов для предотвращения лишних перерисовок.
+                            </p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Denis24-sdk/ToDo-List/tree/master" target="_blank"
+                                rel="noopener noreferrer" class="project-link-btn github" role="button"
+                                aria-label="Открыть репозиторий проекта на GitHub">
+                                GitHub
+                            </a>
+                            <a href="https://todo-list-test-all.netlify.app/" target="_blank" rel="noopener noreferrer"
+                                class="project-link-btn site" role="button" aria-label="Перейти на сайт проекта">
+                                Сайт
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Проект 3 -->
+                <article class="project-card" data-category="info" tabindex="0" role="group"
+                    aria-labelledby="project1-title" aria-describedby="project1-desc">
+                    <div class="project-img-wrapper">
+                        <img src="img/Снимок экрана 2025-05-29 170412.png" alt="Превью проекта Музей уличного искусства"
+                            loading="lazy" />
+                    </div>
+                    <div class="project-info">
+                        <div class="content-wrapper">
+                            <h3 id="project1-title" class="project-title">Музей уличного искусства</h3>
+                            <p id="project1-desc" class="project-description">
+                                <strong>Описание:</strong> Адаптивный сайт с ярким дизайном, содержащий галерею уличных
+                                художников и их работ. Сайт представляет Музей Уличного Искусства. Тут есть различные
+                                формы,
+                                карта и тп.
+                                Проект хорошо подходит для демонстрации творческого подхода и навыков верстки.
+                            </p>
+                            <p class="project-description">
+                                <strong>Стек технологий: </strong>
+                                HTML/CSS
+                            </p>
+                            <p class="project-description">
+                                <strong>Трудности при разработке: </strong>
+                                Адаптация навигационного меню;
+                                Оптимизация загрузки ресурсов и изображений;
+                                Обеспечение корректного масштабирования и расположения элементов галереи на экранах
+                                разных
+                                размеров без потери качества.
+                            </p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Denis24-sdk/museum-street-graffity/tree/master" target="_blank"
+                                rel="noopener noreferrer" class="project-link-btn github" role="button"
+                                aria-label="Открыть репозиторий проекта на GitHub">
+                                GitHub
+                            </a>
+                            <a href="https://museum-street-graffity.netlify.app/" target="_blank"
+                                rel="noopener noreferrer" class="project-link-btn site" role="button"
+                                aria-label="Перейти на сайт проекта">
+                                Сайт
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+
+
+                <article class="project-card" data-category="landing" tabindex="0" role="group"
+                    aria-labelledby="project1-title" aria-describedby="project1-desc">
+                    <div class="project-img-wrapper">
+                        <img src="img\brave_screenshot_phenomenal-smakager-795f6e.netlify.app.png"
+                            alt="Превью проекта СтройКомфорт" loading="lazy" />
+                    </div>
+                    <div class="project-info">
+                        <div class="content-wrapper">
+                            <h3 id="project1-title" class="project-title">СтройКомфорт</h3>
+                            <p id="project1-desc" class="project-description">
+                                <strong>Описание:</strong>
+                                Этот проект представляет собой современный одностраничный адаптивный веб-сайт,
+                                выполненный с акцентом на минимализм и визуальную гармонию.
+                                Дизайн сайта сочетает в себе лаконичность и выразительные цветовые акценты, что создаёт
+                                запоминающийся пользовательский опыт.
+                                Особое внимание уделено удобству навигации — меню легко доступно и адаптировано под
+                                сенсорное управление на мобильных устройствах.
+                                Сайт отлично масштабируется под различные разрешения экранов, сохраняя структуру и
+                                читаемость контента.
+                            </p>
+                            <p class="project-description">
+                                <strong>Стек технологий: </strong>
+                                HTML/CSS, JS
+                            </p>
+                            <p class="project-description">
+                                <strong>Трудности при разработке: </strong>
+                                Адаптация навигационного меню;
+                                Оптимизация анимаций;
+                                Управление ресурсами.
+                            </p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Denis24-sdk/landing-Page/tree/main/%D0%A1%D1%82%D1%80%D0%BE%D0%B9%D0%9A%D0%BE%D0%BC%D1%84%D0%BE%D1%80%D1%82"
+                                target="_blank" rel="noopener noreferrer" class="project-link-btn github" role="button"
+                                aria-label="Открыть репозиторий проекта на GitHub">
+                                GitHub
+                            </a>
+                            <a href="https://phenomenal-smakager-795f6e.netlify.app/" target="_blank"
+                                rel="noopener noreferrer" class="project-link-btn site" role="button"
+                                aria-label="Перейти на сайт проекта">
+                                Сайт
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+
+
+                <article class="project-card" data-category="landing" tabindex="0" role="group"
+                    aria-labelledby="project1-title" aria-describedby="project1-desc">
+                    <div class="project-img-wrapper">
+                        <img src="img\brave_screenshot_peppy-capybara-74fc19.netlify.app.png"
+                            alt="Превью проекта LuxeGems" loading="lazy" />
+                    </div>
+                    <div class="project-info">
+                        <div class="content-wrapper">
+                            <h3 id="project1-title" class="project-title">LuxeGems</h3>
+                            <p id="project1-desc" class="project-description">
+                                <strong>Описание:</strong>
+                                Современный одностраничный адаптивный сайт с ярким и запоминающимся дизайном.
+                                Присутствует кнопка переключения темы.
+                                Сайт обладает плавными анимациями и удобной навигацией, корректно отображается
+                                на различных устройствах и браузерах, обеспечивая комфортный пользовательский опыт.
+                            </p>
+                            <p class="project-description">
+                                <strong>Стек технологий: </strong>
+                                HTML/CSS, JS
+                            </p>
+                            <p class="project-description">
+                                <strong>Трудности при разработке: </strong>
+                                Поддержка доступности и удобства использования.
+                            </p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Denis24-sdk/landing-Page/tree/main/LuxeGems" target="_blank"
+                                rel="noopener noreferrer" class="project-link-btn github" role="button"
+                                aria-label="Открыть репозиторий проекта на GitHub">
+                                GitHub
+                            </a>
+                            <a href="https://peppy-capybara-74fc19.netlify.app/" target="_blank"
+                                rel="noopener noreferrer" class="project-link-btn site" role="button"
+                                aria-label="Перейти на сайт проекта">
+                                Сайт
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+
+
+                <article class="project-card" data-category="landing" tabindex="0" role="group"
+                    aria-labelledby="project1-title" aria-describedby="project1-desc">
+                    <div class="project-img-wrapper">
+                        <img src="img\brave_screenshot_spiffy-puppy-7e56fc.netlify.app.png"
+                            alt="Превью проекта GreenEats" loading="lazy" />
+                    </div>
+                    <div class="project-info">
+                        <div class="content-wrapper">
+                            <h3 id="project1-title" class="project-title">GreenEats</h3>
+                            <p id="project1-desc" class="project-description">
+                                <strong>Описание:</strong>
+                                Современный одностраничный адаптивный сайт с чистым и минималистичным дизайном.
+                                Сайт обеспечивает удобную навигацию и быстрый отклик, корректно отображается на
+                                различных устройствах и браузерах,
+                                создавая комфортный пользовательский опыт.
+                            </p>
+                            <p class="project-description">
+                                <strong>Стек технологий: </strong>
+                                HTML/CSS, JS
+                            </p>
+                            <p class="project-description">
+                                <strong>Трудности при разработке: </strong>
+                                Оптимизация производительности для плавной работы на мобильных устройствах.
+                            </p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Denis24-sdk/landing-Page/tree/main/GreenEats" target="_blank"
+                                rel="noopener noreferrer" class="project-link-btn github" role="button"
+                                aria-label="Открыть репозиторий проекта на GitHub">
+                                GitHub
+                            </a>
+                            <a href="https://spiffy-puppy-7e56fc.netlify.app/" target="_blank" rel="noopener noreferrer"
+                                class="project-link-btn site" role="button" aria-label="Перейти на сайт проекта">
+                                Сайт
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="project-card" data-category="landing" tabindex="0" role="group"
+                    aria-labelledby="project1-title" aria-describedby="project1-desc">
+                    <div class="project-img-wrapper">
+                        <img src="img\brave_screenshot_transcendent-khapse-6665cb.netlify.app.png"
+                            alt="Превью проекта EcoGarden" loading="lazy" />
+                    </div>
+                    <div class="project-info">
+                        <div class="content-wrapper">
+                            <h3 id="project1-title" class="project-title">EcoGarden</h3>
+                            <p id="project1-desc" class="project-description">
+                                <strong>Описание:</strong>
+                                Данный сайт на английском языке представляет собой современный адаптивный лендинг с
+                                чистым и минималистичным дизайном.
+                                Сайт отлично подходит для презентации продукта или услуги с акцентом на визуальную
+                                привлекательность и удобство пользователя.
+                            </p>
+                            <p class="project-description">
+                                <strong>Стек технологий: </strong>
+                                HTML/CSS, JS
+                            </p>
+                            <p class="project-description">
+                                <strong>Трудности при разработке: </strong>
+                                Оптимизация загрузки и отображения изображений для быстрого времени отклика;
+                                Настройка семантической структуры HTML для улучшения SEO и доступности.
+                            </p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Denis24-sdk/landing-Page/tree/main/EcoGarden" target="_blank"
+                                rel="noopener noreferrer" class="project-link-btn github" role="button"
+                                aria-label="Открыть репозиторий проекта на GitHub">
+                                GitHub
+                            </a>
+                            <a href="https://transcendent-khapse-6665cb.netlify.app/" target="_blank"
+                                rel="noopener noreferrer" class="project-link-btn site" role="button"
+                                aria-label="Перейти на сайт проекта">
+                                Сайт
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+
+
+                <article class="project-card" data-category="landing" tabindex="0" role="group"
+                    aria-labelledby="project1-title" aria-describedby="project1-desc">
+                    <div class="project-img-wrapper">
+                        <img src="img\brave_screenshot_serene-melba-9f2294.netlify.app.png"
+                            alt="Превью проекта CalmMind" loading="lazy" />
+                    </div>
+                    <div class="project-info">
+                        <div class="content-wrapper">
+                            <h3 id="project1-title" class="project-title">CalmMind</h3>
+                            <p id="project1-desc" class="project-description">
+                                <strong>Описание:</strong>
+                                Этот сайт представляет собой современный адаптивный лендинг с элегантным и чистым
+                                дизайном.
+                                Он включает в себя интерактивные элементы, плавные анимации и удобную навигацию,
+                                что обеспечивает приятный пользовательский опыт как на десктопах, так и на мобильных
+                                устройствах.
+                            </p>
+                            <p class="project-description">
+                                <strong>Стек технологий: </strong>
+                                HTML/CSS, JS
+                            </p>
+                            <p class="project-description">
+                                <strong>Трудности при разработке: </strong>
+                                Обеспечение плавной и производительной анимации без задержек и "лагов" на разных
+                                устройствах;
+                                Создание адаптивного дизайна, который корректно отображается на широком диапазоне
+                                экранов — от мобильных телефонов до больших мониторов.
+                            </p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Denis24-sdk/landing-Page/tree/main/CalmMind" target="_blank"
+                                rel="noopener noreferrer" class="project-link-btn github" role="button"
+                                aria-label="Открыть репозиторий проекта на GitHub">
+                                GitHub
+                            </a>
+                            <a href="https://serene-melba-9f2294.netlify.app/" target="_blank" rel="noopener noreferrer"
+                                class="project-link-btn site" role="button" aria-label="Перейти на сайт проекта">
+                                Сайт
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+
+
+                <article class="project-card" data-category="landing" tabindex="0" role="group"
+                    aria-labelledby="project1-title" aria-describedby="project1-desc">
+                    <div class="project-img-wrapper">
+                        <img src="img\brave_screenshot_dapper-lokum-e27423.netlify.app.png"
+                            alt="Превью проекта EcoStyle" loading="lazy" />
+                    </div>
+                    <div class="project-info">
+                        <div class="content-wrapper">
+                            <h3 id="project1-title" class="project-title">EcoStyle</h3>
+                            <p id="project1-desc" class="project-description">
+                                <strong>Описание:</strong>
+                                Сайт демонстрирует качественную верстку с акцентом на визуальные эффекты и удобство
+                                пользователя.
+                                Сайт адаптируется под различные устройства и экраны.
+                            </p>
+                            <p class="project-description">
+                                <strong>Стек технологий: </strong>
+                                HTML/CSS, JS
+                            </p>
+                            <p class="project-description">
+                                <strong>Трудности при разработке: </strong>
+                                Оптимизация загрузки ресурсов (изображений, скриптов) для быстрой скорости загрузки
+                                страницы.
+                            </p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Denis24-sdk/landing-Page/tree/main/EcoStyle" target="_blank"
+                                rel="noopener noreferrer" class="project-link-btn github" role="button"
+                                aria-label="Открыть репозиторий проекта на GitHub">
+                                GitHub
+                            </a>
+                            <a href="https://dapper-lokum-e27423.netlify.app/" target="_blank" rel="noopener noreferrer"
+                                class="project-link-btn site" role="button" aria-label="Перейти на сайт проекта">
+                                Сайт
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+
+
+
+            </div>
+        </section>
+
+        <!-- Контакты -->
         <section id="contacts" aria-labelledby="contacts-title">
-            <h2 id="contacts-title">Контакты</h2>
-            <ul>
+            <h2 id="contacts-title" class="section-header">Контакты</h2>
+            <ul class="contacts-list">
                 <li>
-                    <a href="tel:+71234567890" aria-label="Позвонить по телефону +7 123 456 78 90">
-                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <a href="tel:+79040975026" aria-label="Позвонить по телефону +7 904 097 50 26" role="link"
+                        tabindex="0">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="24"
+                            height="24">
                             <path fill="currentColor"
                                 d="M6.62 10.79a15.053 15.053 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.11-.21 11.36 11.36 0 0 0 3.58.57 1 1 0 0 1 1 1v3.5a1 1 0 0 1-1 1A16 16 0 0 1 4 6a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.36 11.36 0 0 0 .57 3.58 1 1 0 0 1-.21 1.11l-2.24 2.1z" />
                         </svg>
@@ -254,17 +563,21 @@
                     </a>
                 </li>
                 <li>
-                    <a href="mailto:magurovdenis24@gmail.com" aria-label="Отправить email">
-                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                            <path fill="none" stroke="currentColor" stroke-width="2" d="M4 4h16v16H4z" />
-                            <polyline fill="none" stroke="currentColor" stroke-width="2" points="22,6 12,13 2,6" />
+                    <a href="mailto:magurovdenis24@gmail.com" aria-label="Отправить email на magurovdenis24@gmail.com"
+                        role="link" tabindex="0">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            aria-hidden="true" focusable="false" width="24" height="24">
+                            <rect x="3" y="4" width="18" height="16" rx="2" ry="2" />
+                            <polyline points="3 6 12 13 21 6" />
                         </svg>
                         magurovdenis24@gmail.com
                     </a>
                 </li>
                 <li>
-                    <a href="https://t.me/Den24exe" target="_blank" rel="noopener" aria-label="Telegram">
-                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor">
+                    <a href="https://t.me/Den24exe" target="_blank" rel="noopener" aria-label="Перейти в Telegram"
+                        role="link" tabindex="0">
+                        <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"
+                            width="24" height="24">
                             <path
                                 d="M21.75 3.5a1.25 1.25 0 0 0-1.75-.98L3.25 10.75a1.25 1.25 0 0 0 .02 2.32l4.64 1.52 1.98 6.1a1.25 1.25 0 0 0 2.4.04l3.2-9.6 4.9-8.5a1.25 1.25 0 0 0-.74-1.83z" />
                         </svg>
@@ -273,8 +586,73 @@
                 </li>
             </ul>
         </section>
-
     </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const projects = document.querySelectorAll('.project-card');
+            const toggleBtn = document.getElementById('toggle-descriptions');
+            let descriptionsExpanded = false;
+
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterButtons.forEach(b => {
+                        b.classList.remove('active');
+                        b.setAttribute('aria-pressed', 'false');
+                    });
+                    btn.classList.add('active');
+                    btn.setAttribute('aria-pressed', 'true');
+
+                    const filter = btn.dataset.filter;
+
+                    projects.forEach(p => {
+                        if (filter === 'all' || p.dataset.category === filter) {
+                            p.style.display = 'flex';
+                            setTimeout(() => {
+                                p.style.opacity = '1';
+                                p.style.transform = 'scale(1)';
+                                p.style.pointerEvents = 'auto';
+                            }, 20);
+                        } else {
+                            p.style.opacity = '0';
+                            p.style.transform = 'scale(0.95)';
+                            p.style.pointerEvents = 'none';
+                            setTimeout(() => {
+                                p.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+
+            // Анимация заполнения скилл-баров
+            const skillFills = document.querySelectorAll('.skill-fill');
+            skillFills.forEach(fill => {
+                const width = getComputedStyle(fill).getPropertyValue('--fill-width');
+                fill.style.width = '0';
+                setTimeout(() => {
+                    fill.style.width = width;
+                }, 150);
+            });
+
+            // Логика кнопки раскрытия описаний
+            toggleBtn.addEventListener('click', () => {
+                descriptionsExpanded = !descriptionsExpanded;
+                const allDescriptions = document.querySelectorAll('.project-description');
+                allDescriptions.forEach(desc => {
+                    if (descriptionsExpanded) {
+                        desc.classList.add('expanded');
+                    } else {
+                        desc.classList.remove('expanded');
+                    }
+                });
+                toggleBtn.textContent = descriptionsExpanded ? 'Свернуть описание проектов' : 'Раскрыть описание проектов';
+                toggleBtn.setAttribute('aria-expanded', descriptionsExpanded.toString());
+            });
+
+        });
+    </script>
 </body>
 
 </html>
